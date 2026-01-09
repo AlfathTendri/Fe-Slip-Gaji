@@ -87,12 +87,12 @@ export default function DashboardPage() {
                     </h3>
                     <div className="flex h-64 items-end justify-between gap-2">
                         {[60, 45, 75, 50, 65, 80].map((height, i) => (
-                            <div key={i} className="group relative w-full">
+                            <div key={i} className="group relative w-full h-full flex flex-col justify-end">
                                 <div
-                                    className="w-full rounded-t-sm bg-blue-500/80 transition-all hover:bg-blue-600"
+                                    className="w-full rounded-t-sm bg-blue-500 transition-all hover:bg-blue-600"
                                     style={{ height: `${height}%` }}
                                 ></div>
-                                <span className="mt-2 block text-center text-[10px] text-slate-400">
+                                <span className="mt-2 text-center text-[10px] text-slate-400">
                                     {['Jan', 'Feb', 'Mar', 'Apr', 'Mei', 'Jun'][i]}
                                 </span>
                             </div>

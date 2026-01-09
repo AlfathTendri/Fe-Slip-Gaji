@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 
 export default function PayslipPage({ params }: { params: { id: string } }) {
     return (
-        <div className="mx-auto max-w-4xl space-y-6">
+        <div className="mx-auto max-w-3xl space-y-6">
             {/* Header Actions */}
             <div className="flex items-center justify-between">
                 <Link
@@ -14,7 +14,7 @@ export default function PayslipPage({ params }: { params: { id: string } }) {
                     <ArrowLeft className="h-4 w-4" />
                     Kembali
                 </Link>
-                <Button className="gap-2">
+                <Button className="gap-2 w-auto">
                     <Printer className="h-4 w-4" />
                     Cetak Slip Gaji
                 </Button>
